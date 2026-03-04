@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "7674e886-4007-4f60-b7a6-39329a551cf1",
+  "name": "spray_letters",
+  "symbol": "tileset_spray_letters",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "spray_letters.png"
+}

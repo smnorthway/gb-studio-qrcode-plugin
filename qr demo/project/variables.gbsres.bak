@@ -1,0 +1,56 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "4249a077-c61c-4531-bd23-054063556ec3__L0",
+      "name": "tsn",
+      "symbol": "var_tsn"
+    },
+    {
+      "id": "4249a077-c61c-4531-bd23-054063556ec3__L1",
+      "name": "loop",
+      "symbol": "var_loop"
+    },
+    {
+      "id": "4249a077-c61c-4531-bd23-054063556ec3__L2",
+      "name": "bs",
+      "symbol": "var_bs"
+    },
+    {
+      "id": "01fb743f-d712-431a-834b-a25ebced1973__L0",
+      "name": "x",
+      "symbol": "var_x"
+    },
+    {
+      "id": "1",
+      "name": "nm1",
+      "symbol": "var_nm1"
+    },
+    {
+      "id": "2",
+      "name": "nm2",
+      "symbol": "var_nm2"
+    },
+    {
+      "id": "3",
+      "name": "nm3",
+      "symbol": "var_nm3"
+    },
+    {
+      "id": "5",
+      "name": "nm4",
+      "symbol": "var_nm4"
+    },
+    {
+      "id": "6",
+      "name": "nm5",
+      "symbol": "var_nm5"
+    },
+    {
+      "id": "8",
+      "name": "idx",
+      "symbol": "var_idx"
+    }
+  ],
+  "constants": []
+}
