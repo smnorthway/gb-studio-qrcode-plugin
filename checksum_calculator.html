@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checksum Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checksum Calculator</h1>
+        <input type="text" id="inputString" placeholder="Enter a string">
+        <h2>Checksum: <span id="checksum"></span></h2>
+    </div>
+
+    <script>
+        const inputString = document.getElementById('inputString');
+        const checksumSpan = document.getElementById('checksum');
+
+        function xor_rotate_checksum(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = (hash << 1) | (hash >>> 31);
+                hash ^= str.charCodeAt(i);
+            }
+            return hash;
+        }
+
+        function to_base36_no_div(value) {
+            const BASE36_CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const powers = [1679616, 46656, 1296, 36];
+            let out_str = "";
+            for (let i = 0; i < 4; i++) {
+                let digit = 0;
+                while (value >= powers[i]) {
+                    value -= powers[i];
+                    digit++;
+                }
+                out_str += BASE36_CHARS[digit];
+            }
+            out_str += BASE36_CHARS[value];
+            return out_str;
+        }
+
+        inputString.addEventListener('input', () => {
+            const str = inputString.value;
+            if (str) {
+                const checksum = xor_rotate_checksum(str);
+                const final_str = to_base36_no_div(checksum);
+                checksumSpan.textContent = final_str;
+            } else {
+                checksumSpan.textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>
