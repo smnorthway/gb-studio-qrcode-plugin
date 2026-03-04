@@ -1,5 +1,5 @@
 # gb-studio-qrcode-plugin
-This engine plugin generates in-game qrcodes. 
+This engine plugin generates in-game qrcodes in GB Studio 4.2.2. 
 
 
 i created this plugin to connect to a "global" leaderboard website I setup
@@ -12,4 +12,5 @@ username and score were included as arguments in the url.
 
 The plugin also includes a hash calculator. I included a hash of the 
 username and score as an argument in the leaderboard url. The server side of the leaderboard 
-website recalculates the hash to ensure the arguments haven't changed.
+website recalculates the hash to ensure the arguments haven't changed. I have 
+included a js implementaion of the same hash calculation.
