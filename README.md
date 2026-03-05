@@ -1,3 +1,5 @@
+The usual "software not warrented to be suitable for the intended purpose".
+
 # gb-studio-qrcode-plugin
 This engine plugin generates in-game qrcodes in GB Studio 4.2.2. It is installed by 
 copying the "via_norte" folder and all subfolders into your game's "plugins" folder. 
