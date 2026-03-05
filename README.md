@@ -1,5 +1,10 @@
 # gb-studio-qrcode-plugin
-This engine plugin generates in-game qrcodes in GB Studio 4.2.2. 
+This engine plugin generates in-game qrcodes in GB Studio 4.2.2. It is installed by 
+copying the "via_norte" folder and all subfolders into your game's "plugins" folder. 
+ Two new events will showup in your "Add Event" dialogue. You can find them by searching on "qr".
+
+ You can also check them out by downloading the "qr demo" folder and subfolders. It
+ contains a one scene game that lets you enter a player name and then create a usable qr code.
 
 
 i created this plugin to connect to a "global" leaderboard website I setup
